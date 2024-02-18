@@ -71,10 +71,10 @@
       </nav>
     </header>
 
-    <main class="container mx-auto">
+    <main>
       <!-- Banner Section  -->
       <section
-        class="hero rounded-none md:rounded-3xl md:h-[550px]"
+        class="container mx-auto hero rounded-none md:rounded-3xl md:h-[550px]"
         style="background-image: url(images/banner.png)"
       >
         <div
@@ -104,7 +104,7 @@
       </section>
 
       <!-- Offer Section  -->
-      <section class="grid grid-cols-2 mt-16">
+      <section class="container mx-auto grid grid-cols-2 mt-16">
         <h1 class="col-span-2 text-center font-bold text-xl lg:text-4xl mb-8">
           Best offers for you
         </h1>
@@ -168,82 +168,198 @@
 
       <!-- Parabahan Section  -->
       <section
-        class="grid grid-cols-12 bg-gray-100 mt-16 py-7 px-4 border-t-2 border-[#1DD100] border-dashed"
+        class="bg-gray-100 border-t-2 border-[#1DD100] border-dashed rounded-2xl mt-16 py-7"
       >
-        <!-- Paribahan Info  -->
-        <div class="col-span-12">
-          <h1 class="text-center font-bold text-xl lg:text-4xl mb-8">
-            Safe Paribahan
-          </h1>
-          <p class="max-w-2xl mx-auto text-center mb-5">
-            Yes, you can run unit tests and view the results directly within the
-            app. The integrated testing features allow for a streamlined .
-          </p>
-        </div>
+        <div class="container mx-auto grid grid-cols-12">
+          <!-- Paribahan Info  -->
+          <div class="col-span-12">
+            <h1 class="text-center font-bold text-xl lg:text-4xl mb-8">
+              Safe Paribahan
+            </h1>
+            <p class="max-w-2xl mx-auto text-center mb-5">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
 
-        <!-- Travel Info  -->
-        <div
-          class="col-span-12 md:col-span-9 bg-white p-6 rounded-2xl flex flex-col gap-4 border-b-2 md:border-b-0 border-r-0 md:border-r-2 border-[#1DD100] border-dashed"
-        >
-          <!-- Travel Info Top -->
-          <div class="flex flex-col sm:flex-row justify-between items-center">
-            <div class="flex justify-between items-center gap-3">
-              <img src="images/icons/bus-logo.png" alt="" />
+          <!-- Travel Info  -->
+          <div
+            class="container mx-auto col-span-12 md:col-span-9 bg-white p-6 rounded-2xl flex flex-col gap-4 border-b-2 md:border-b-0 border-r-0 md:border-r-2 border-[#1DD100] border-dashed"
+          >
+            <!-- Travel Info Top -->
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+              <div class="flex justify-between items-center gap-3">
+                <img src="images/icons/bus-logo.png" alt="" />
+                <div>
+                  <h1 class="font-bold text-xl lg:text-2xl">Safe Paribahan</h1>
+                  <p class="text-gray-600">Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
               <div>
-                <h1 class="font-bold text-xl lg:text-2xl">Safe Paribahan</h1>
-                <p class="text-gray-600">Coach-009-WEB ! AC_Business</p>
+                <a
+                  class="btn bg-[#1DD1001A] border-[1px] border-[#1DD10066] text-[#1DD100] hover:bg-[#1DD1000D] hover:border-[#1DD10066] font-bold text-lg"
+                >
+                  <span
+                    ><img src="images/icons/seat-green.png" alt="Bus"
+                  /></span>
+                  <span>40</span>
+                  Seats left
+                </a>
               </div>
             </div>
-            <div>
-              <a
-                class="btn bg-[#1DD1001A] border-[1px] border-[#1DD10066] text-[#1DD100] hover:bg-[#1DD1000D] hover:border-[#1DD10066] font-bold text-lg"
+
+            <!-- Travel Info Bottom  -->
+            <div class="bg-gray-100 flex flex-col p-6 rounded-xl">
+              <div class="flex justify-between pb-6">
+                <p class="font-medium text-lg text-gray-600">Route</p>
+                <p class="font-medium text-lg">Dhaka - Sylhet</p>
+              </div>
+              <div
+                class="flex justify-between py-6 border-t-2 border-gray-200 border-dashed"
               >
-                <span><img src="images/icons/seat-green.png" alt="Bus" /></span>
-                <span>40</span>
-                Seats left
-              </a>
+                <p class="font-medium text-lg text-gray-600">Departure Time</p>
+                <p class="font-medium text-lg">9:00 PM</p>
+              </div>
+              <div
+                class="pt-6 border-t-2 border-gray-200 border-dashed flex justify-center lg:justify-between flex-wrap lg:flex-nowrap"
+              >
+                <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
+                  >Boarding Point - Laxmipur
+                </a>
+                <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
+                  >Dropping Point - Bogura
+                </a>
+                <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
+                  >Est. Time - 11 Hour
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Travel Info Bottom  -->
-          <div class="bg-gray-100 flex flex-col p-6 rounded-xl">
-            <div class="flex justify-between pb-6">
-              <p class="font-medium text-lg text-gray-600">Route</p>
-              <p class="font-medium text-lg">Dhaka - Sylhet</p>
-            </div>
-            <div
-              class="flex justify-between py-6 border-t-2 border-gray-200 border-dashed"
-            >
-              <p class="font-medium text-lg text-gray-600">Departure Time</p>
-              <p class="font-medium text-lg">9:00 PM</p>
-            </div>
-            <div
-              class="pt-6 border-t-2 border-gray-200 border-dashed flex justify-center lg:justify-between flex-wrap lg:flex-nowrap"
-            >
-              <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
-                >Boarding Point - Laxmipur
-              </a>
-              <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
-                >Dropping Point - Bogura
-              </a>
-              <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
-                >Est. Time - 11 Hour
-              </a>
-            </div>
+          <!-- Price  -->
+          <div
+            class="col-span-12 md:col-span-3 bg-white flex flex-col p-6 rounded-2xl justify-center items-center gap-4"
+          >
+            <img src="images/icons/fare.png" alt="" />
+            <h1 class="font-bold text-xl lg:text-2xl">550 Taka</h1>
+            <p class="text-xl font-medium text-gray-600">Per Seat</p>
           </div>
-        </div>
-
-        <!-- Price  -->
-        <div
-          class="col-span-12 md:col-span-3 bg-white flex flex-col p-6 rounded-2xl justify-center items-center gap-4"
-        >
-          <img src="images/icons/fare.png" alt="" />
-          <h1 class="font-bold text-xl lg:text-2xl">550 Taka</h1>
-          <p class="text-xl font-medium text-gray-600">Per Seat</p>
         </div>
       </section>
 
-      <section class="mt-16"></section>
+      <!-- Seats and Bill  -->
+      <section class="bg-gray-100">
+        <div class="grid grid-cols-12 container mx-auto rounded-2xl bg-white">
+          <!-- Seats info  -->
+          <div
+            class="col-span-12 md:col-span-7 p-6 border-r-2 border-gray-200 border-dashed"
+          >
+            <h1 class="pb-5 text-xl font-semibold">Select Your Seat</h1>
+            <div
+              class="flex items-center justify-between py-5 border-t-2 border-b-2 border-gray-200 border-dashed"
+            >
+              <div class="flex items-center gap-2">
+                <img src="images/icons/seat-gray.png" alt="" />
+                <span class="text-gray-600 font-medium">Available</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="images/icons/seat-green-filled.png" alt="" />
+                <span class="text-[#1DD100] font-medium">Selected</span>
+              </div>
+            </div>
+
+            <!-- seats  -->
+            <div
+              class="grid grid-cols-10 gap-5 pt-4 justify-center items-center"
+            >
+              <span class="col-span-8"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">
+                Driver
+              </button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">A</p>
+              <button class="col-span-2 btn text-lg text-gray-600">A1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">A2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">A3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">A4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">B</p>
+              <button class="col-span-2 btn text-lg text-gray-600">B1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">B2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">B3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">B4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">C</p>
+              <button class="col-span-2 btn text-lg text-gray-600">C1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">C2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">C3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">C4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">D</p>
+              <button class="col-span-2 btn text-lg text-gray-600">D1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">D2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">D3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">D4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">E</p>
+              <button class="col-span-2 btn text-lg text-gray-600">E1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">E2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">E3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">E4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">F</p>
+              <button class="col-span-2 btn text-lg text-gray-600">F1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">F2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">F3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">F4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">G</p>
+              <button class="col-span-2 btn text-lg text-gray-600">G1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">G2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">G3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">G4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">H</p>
+              <button class="col-span-2 btn text-lg text-gray-600">H1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">H2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">H3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">H4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">I</p>
+              <button class="col-span-2 btn text-lg text-gray-600">I1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">I2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">I3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">I4</button>
+              <p class="col-span-1 text-xl text text-center text-gray-600">J</p>
+              <button class="col-span-2 btn text-lg text-gray-600">J1</button>
+              <button class="col-span-2 btn text-lg text-gray-600">J2</button>
+              <span class="col-span-1"></span>
+              <button class="col-span-2 btn text-lg text-gray-600">J3</button>
+              <button class="col-span-2 btn text-lg text-gray-600">J4</button>
+            </div>
+          </div>
+
+          <!-- Bill  -->
+          <div class="col-span-12 md:col-span-5 p-6">
+            <h1
+              class="pb-5 text-xl font-semibold border-b-2 border-gray-200 border-dashed"
+            >
+              Select Your Seat
+            </h1>
+            <!-- Cost Grid  -->
+            <div
+              class="grid grid-cols-3 bg-gray-100 mt-5 p-6 gap-4 rounded-2xl border-black border-2 border-solid"
+            >
+              <p class="border-black border-2 border-solid">Seat</p>
+              <p class="border-black border-2 border-solid">Class</p>
+              <p class="border-black border-2 border-solid text-right">Price</p>
+              <p class="border-black border-2 border-solid">C2</p>
+              <p class="border-black border-2 border-solid">Economy</p>
+              <p class="border-black border-2 border-solid text-right">550</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
