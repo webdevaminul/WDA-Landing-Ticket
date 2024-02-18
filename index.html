@@ -248,7 +248,7 @@
       </section>
 
       <!-- Seats and Bill  -->
-      <section class="bg-gray-100">
+      <section class="bg-gray-100 pb-20">
         <div class="grid grid-cols-12 container mx-auto rounded-2xl bg-white">
           <!-- Seats info  -->
           <div
@@ -348,15 +348,94 @@
             </h1>
             <!-- Cost Grid  -->
             <div
-              class="grid grid-cols-3 bg-gray-100 mt-5 p-6 gap-4 rounded-2xl border-black border-2 border-solid"
+              class="grid grid-cols-3 bg-gray-100 mt-5 p-6 gap-2 rounded-2xl"
             >
-              <p class="border-black border-2 border-solid">Seat</p>
-              <p class="border-black border-2 border-solid">Class</p>
-              <p class="border-black border-2 border-solid text-right">Price</p>
-              <p class="border-black border-2 border-solid">C2</p>
-              <p class="border-black border-2 border-solid">Economy</p>
-              <p class="border-black border-2 border-solid text-right">550</p>
+              <div
+                class="col-span-3 grid grid-cols-3 gap-4 border-b-2 border-gray-300 border-dashed pb-3"
+              >
+                <p class="text-lg font-medium">Seat <span>2</span></p>
+                <p class="text-lg font-medium">Class</p>
+                <p class="text-lg font-medium text-right">Price</p>
+              </div>
+              <p class="text-lg text-gray-500">C2</p>
+              <p class="text-lg text-gray-500">Economy</p>
+              <p class="text-lg text-gray-500 text-right">550</p>
+              <p class="text-lg text-gray-500">D2</p>
+              <p class="text-lg text-gray-500">Economy</p>
+              <p class="text-lg text-gray-500 text-right">550</p>
+              <hr
+                class="col-span-3 color border border-solid border-gray-300"
+              />
+
+              <div class="col-span-3 flex justify-between">
+                <p class="text-lg font-medium">Total Price</p>
+                <p class="text-lg font-medium">BDT 1100</p>
+              </div>
+
+              <div class="col-span-3 relative w-full h-16">
+                <input
+                  class="w-full p-5 rounded-xl absolute top-0 left-0 right-0"
+                  placeholder="Have any copupon?"
+                  type="text"
+                />
+                <button
+                  class="btn bg-[#1DD100] hover:bg-[#1DD100] text-white text-lg absolute top-2 right-2"
+                >
+                  Apply
+                </button>
+              </div>
+              <div class="col-span-3 flex justify-between">
+                <p class="text-lg font-medium">Grand Total</p>
+                <p class="text-lg font-medium">BDT 1100</p>
+              </div>
             </div>
+            <!-- Form  -->
+            <form action="" class="flex flex-col gap-4 mt-5">
+              <label for="passenger-name" class="text-lg font-medium"
+                >Passenger Name*</label
+              >
+              <input
+                class="p-4 border-2 border-solid border-gray-100 rounded-xl"
+                type="text"
+                id="passenger-name"
+                placeholder="Enter your name"
+              />
+
+              <label for="passenger-phone" class="text-lg font-medium"
+                >Phone Number*</label
+              >
+              <input
+                class="p-4 border-2 border-solid border-gray-100 rounded-xl"
+                type="number"
+                id="passenger-phone"
+                placeholder="Enter your phone number"
+              />
+
+              <label for="passenger-email" class="text-lg font-medium"
+                >Email ID</label
+              >
+              <input
+                class="p-4 border-2 border-solid border-gray-100 rounded-xl"
+                type="email"
+                id="passenger-email"
+                placeholder="Enter your email id"
+              />
+
+              <button
+                class="btn bg-[#1DD100] hover:bg-[#1DD100] text-white text-lg"
+              >
+                Next
+              </button>
+
+              <div class="flex justify-evenly">
+                <p class="underline text-lg text-gray-600">
+                  Terms and Conditions
+                </p>
+                <p class="underline text-lg text-gray-600">
+                  Cancellation Policy
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </section>
