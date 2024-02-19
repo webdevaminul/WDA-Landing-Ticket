@@ -72,6 +72,13 @@ for (const singleSeat of allSeats) {
         const applyElement = document.getElementById("apply");
         applyElement.removeAttribute("disabled");
       }
+
+      const nameInput = document.getElementById("passenger-name").value;
+
+      if (newTotal > 0 && (nameInput !== null || nameInput !== "")) {
+        const nextBtn = document.getElementById("next-btn");
+        nextBtn.removeAttribute("disabled");
+      }
     }
   });
 }
@@ -131,4 +138,22 @@ document.getElementById("apply").addEventListener("click", function () {
   } else {
     alert("Invalid Coupon Code");
   }
+});
+
+document.getElementById("next-btn").addEventListener("click", function () {
+  const headerPart = document.getElementById("header-section");
+  headerPart.classList.add("hidden");
+  const mainPart = document.getElementById("main-section");
+  mainPart.classList.add("hidden");
+  const successPart = document.getElementById("success-part");
+  successPart.classList.remove("hidden");
+});
+
+document.getElementById("success-part").addEventListener("click", function () {
+  const headerPart = document.getElementById("header-section");
+  headerPart.classList.remove("hidden");
+  const mainPart = document.getElementById("main-section");
+  mainPart.classList.remove("hidden");
+  const successPart = document.getElementById("success-part");
+  successPart.classList.add("hidden");
 });

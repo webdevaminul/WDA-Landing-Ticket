@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="min-h-screen">
-    <header class="container mx-auto mb-5">
+    <header id="header-section" class="container mx-auto mb-5">
       <nav class="navbar bg-base-100">
         <!-- Nav Bar Start  -->
         <div class="navbar-start">
@@ -71,7 +71,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-section" class="">
       <!-- Banner Section  -->
       <section
         class="container mx-auto hero rounded-none md:rounded-3xl md:h-[550px]"
@@ -503,6 +503,7 @@
                 type="text"
                 id="passenger-name"
                 placeholder="Enter your name"
+                required
               />
 
               <label for="passenger-phone" class="text-lg font-medium"
@@ -513,6 +514,7 @@
                 type="number"
                 id="passenger-phone"
                 placeholder="Enter your phone number"
+                required
               />
 
               <label for="passenger-email" class="text-lg font-medium"
@@ -526,6 +528,9 @@
               />
 
               <button
+                disabled
+                id="next-btn"
+                type="submit"
                 class="btn bg-[#1DD100] hover:bg-[#1DD100] text-white text-lg"
               >
                 Next
@@ -544,6 +549,28 @@
         </div>
       </section>
     </main>
+
+    <section
+      id="success-part"
+      class="min-h-screen bg-gray-100 flex justify-center items-center shadow-md hidden"
+    >
+      <div
+        class="border bg-white p-10 flex flex-col items-center justify-center rounded-2xl gap-3"
+      >
+        <img src="images/success.png" alt="" />
+        <h1 class="text-2xl font-bold text-green-600">SUCCESS</h1>
+        <p class="text-center font-medium">
+          Thank you for Booking Our Bus Seats. <br />We are working hard to find
+          the best service and deals for you.
+        </p>
+        <p>Shortly you will find a confirmation in your email.</p>
+        <button
+          class="btn text-white bg-green-600 hover:bg-green-700 px-14 rounded-full"
+        >
+          Continue
+        </button>
+      </div>
+    </section>
 
     <script src="scripts/utility.js"></script>
   </body>
