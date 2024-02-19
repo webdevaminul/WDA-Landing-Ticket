@@ -97,7 +97,7 @@
             </p>
             <a href="#buy-ticket"
               ><button
-                class="btn bg-[#1DD100] border-[#1DD100] hover:bg-[#1DD100CC] hover:border-[#1DD100] font-bold text-lg"
+                class="btn bg-[#1DD100] border-[#1DD100] hover:bg-green-400 hover:border-[#1DD100] font-bold text-lg"
               >
                 Buy Tickets
               </button></a
@@ -161,7 +161,7 @@
         <!-- Offer Button  -->
         <div class="col-span-2 flex items-center justify-center">
           <button
-            class="btn text-[#1DD100] bg-white border-[#1DD100] hover:bg-[#1DD1000D] hover:border-[#1DD100]"
+            class="btn text-[#1DD100] bg-white border-[#1DD100] hover:bg-[#1cd10021] hover:border-[#1DD100]"
           >
             See All Offers
           </button>
@@ -170,7 +170,7 @@
 
       <!-- Parabahan Section  -->
       <section
-        class="bg-gray-100 border-t-2 border-[#1DD100] border-dashed rounded-2xl mt-16 py-7"
+        class="bg-[#f7f8f8] border-t-2 border-[#1DD100] border-dashed rounded-2xl mt-16 py-7"
       >
         <div class="container mx-auto grid grid-cols-12">
           <!-- Paribahan Info  -->
@@ -184,70 +184,84 @@
             </p>
           </div>
 
-          <!-- Travel Info  -->
           <div
-            class="container mx-auto col-span-12 md:col-span-9 bg-white p-6 rounded-2xl flex flex-col gap-4 border-b-2 md:border-b-0 border-r-0 md:border-r-2 border-[#1DD100] border-dashed"
+            class="container mx-auto col-span-12 grid grid-cols-12 rounded-2xl bg-white"
           >
-            <!-- Travel Info Top -->
+            <!-- Travel Info  -->
             <div
-              id="buy-ticket"
-              class="flex flex-col sm:flex-row justify-between items-center"
+              class="col-span-12 md:col-span-9 p-4 gap-4 border-b-2 md:border-b-0 border-[#1DD100] border-dashed"
             >
-              <div class="flex justify-between items-center gap-3">
-                <img src="images/icons/bus-logo.png" alt="" />
+              <!-- Travel Info Top -->
+              <div
+                id="buy-ticket"
+                class="flex flex-col sm:flex-row justify-between items-center pb-1"
+              >
+                <div class="flex justify-between items-center gap-3">
+                  <img src="images/icons/bus-logo.png" alt="" />
+                  <div>
+                    <h1 class="font-bold text-xl lg:text-2xl">
+                      Safe Paribahan
+                    </h1>
+                    <p class="text-gray-600">Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
                 <div>
-                  <h1 class="font-bold text-xl lg:text-2xl">Safe Paribahan</h1>
-                  <p class="text-gray-600">Coach-009-WEB ! AC_Business</p>
+                  <a
+                    class="btn bg-[#1DD1001A] border-[1px] border-[#1DD10066] text-[#1DD100] hover:bg-[#1DD1000D] hover:border-[#1DD10066] font-bold text-lg"
+                  >
+                    <span
+                      ><img src="images/icons/seat-green.png" alt="Bus"
+                    /></span>
+                    <span id="seat-left">40</span>
+                    Seats left
+                  </a>
                 </div>
               </div>
-              <div>
-                <a
-                  class="btn bg-[#1DD1001A] border-[1px] border-[#1DD10066] text-[#1DD100] hover:bg-[#1DD1000D] hover:border-[#1DD10066] font-bold text-lg"
+
+              <!-- Travel Info Bottom  -->
+              <div class="bg-[#f7f8f8] flex flex-col p-6 rounded-xl">
+                <div class="flex justify-between pb-6">
+                  <p class="font-medium text-lg text-gray-600">Route</p>
+                  <p class="font-medium text-lg">Dhaka - Sylhet</p>
+                </div>
+                <div
+                  class="flex justify-between py-6 border-t-2 border-gray-200 border-dashed"
                 >
-                  <span
-                    ><img src="images/icons/seat-green.png" alt="Bus"
-                  /></span>
-                  <span id="seat-left">40</span>
-                  Seats left
-                </a>
+                  <p class="font-medium text-lg text-gray-600">
+                    Departure Time
+                  </p>
+                  <p class="font-medium text-lg">9:00 PM</p>
+                </div>
+                <div
+                  class="pt-6 border-t-2 border-gray-200 border-dashed flex justify-center lg:justify-between flex-wrap lg:flex-nowrap"
+                >
+                  <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
+                    >Boarding Point - Laxmipur
+                  </a>
+                  <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
+                    >Dropping Point - Bogura
+                  </a>
+                  <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
+                    >Est. Time - 11 Hour
+                  </a>
+                </div>
               </div>
             </div>
 
-            <!-- Travel Info Bottom  -->
-            <div class="bg-gray-100 flex flex-col p-6 rounded-xl">
-              <div class="flex justify-between pb-6">
-                <p class="font-medium text-lg text-gray-600">Route</p>
-                <p class="font-medium text-lg">Dhaka - Sylhet</p>
-              </div>
-              <div
-                class="flex justify-between py-6 border-t-2 border-gray-200 border-dashed"
-              >
-                <p class="font-medium text-lg text-gray-600">Departure Time</p>
-                <p class="font-medium text-lg">9:00 PM</p>
-              </div>
-              <div
-                class="pt-6 border-t-2 border-gray-200 border-dashed flex justify-center lg:justify-between flex-wrap lg:flex-nowrap"
-              >
-                <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
-                  >Boarding Point - Laxmipur
-                </a>
-                <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
-                  >Dropping Point - Bogura
-                </a>
-                <a class="btn bg-gray-200 font-medium text-lg text-gray-600"
-                  >Est. Time - 11 Hour
-                </a>
-              </div>
-            </div>
-          </div>
+            <img
+              class="col-span-1 hidden md:block h-full"
+              src="images/info-devider.png"
+              alt=""
+            />
 
-          <!-- Price  -->
-          <div
-            class="col-span-12 md:col-span-3 bg-white flex flex-col p-6 rounded-2xl justify-center items-center gap-4"
-          >
-            <img src="images/icons/fare.png" alt="" />
-            <h1 class="font-bold text-xl lg:text-2xl">550 Taka</h1>
-            <p class="text-xl font-medium text-gray-600">Per Seat</p>
+            <!-- Price  -->
+            <div
+              class="col-span-12 md:col-span-2 flex flex-col justify-center items-center py-3 pr-0 lg:pr-14"
+            >
+              <img src="images/icons/fare.png" alt="" />
+              <h1 class="font-bold text-xl lg:text-2xl">550 Taka</h1>
+              <p class="text-xl font-medium text-gray-600">Per Seat</p>
+            </div>
           </div>
         </div>
       </section>

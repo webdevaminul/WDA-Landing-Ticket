@@ -75,7 +75,7 @@ for (const singleSeat of allSeats) {
 
       const nameInput = document.getElementById("passenger-name").value;
 
-      if (newTotal > 0 && (nameInput !== null || nameInput !== "")) {
+      if (newTotal > 0) {
         const nextBtn = document.getElementById("next-btn");
         nextBtn.removeAttribute("disabled");
       }
