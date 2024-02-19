@@ -42,10 +42,6 @@ for (const singleSeat of allSeats) {
       cTotal.innerText = newTotal;
       const newGrandTotal = currentGrandTotal + 550;
       cGrandTotal.innerText = newGrandTotal;
-      // console.log(currentLeft);
-      // console.log(currentBooking);
-      // console.log(currentTotal);
-      // console.log(currentGrandTotal);
 
       // Creating Apending Elements
       const costGrid = document.getElementById("cost-grid");
@@ -94,9 +90,45 @@ document.getElementById("apply").addEventListener("click", function () {
     const disValue15 = (GrandTotal * 15) / 100;
     const ultGrandTotal15 = GrandTotal - disValue15;
     setValueById("grand-total", ultGrandTotal15);
+
+    // Hiding Apply Button
+    const inputFieldElement = document.getElementById("input-field");
+    inputFieldElement.classList.add("hidden");
+
+    // Creating Discount Element
+    const belowAppendElement = document.getElementById("place-to-discount");
+    const priceP1 = document.createElement("p");
+    const priceP2 = document.createElement("p");
+
+    // Appending Discount Element
+    belowAppendElement.appendChild(priceP1);
+    priceP1.classList.add("text-lg", "font-medium");
+    priceP1.innerText = "Discount";
+    belowAppendElement.appendChild(priceP2);
+    priceP2.classList.add("text-lg", "font-medium");
+    priceP2.innerText = "BDT " + disValue15;
   } else if (couponText == "Couple 20") {
     const disValue20 = (GrandTotal * 20) / 100;
     const ultGrandTotal20 = GrandTotal - disValue20;
     setValueById("grand-total", ultGrandTotal20);
+
+    // Hiding Apply Button
+    const inputFieldElement = document.getElementById("input-field");
+    inputFieldElement.classList.add("hidden");
+
+    // Creating Discount Element
+    const belowAppendElement = document.getElementById("place-to-discount");
+    const priceP1 = document.createElement("p");
+    const priceP2 = document.createElement("p");
+
+    // Appending Discount Element
+    belowAppendElement.appendChild(priceP1);
+    priceP1.classList.add("text-lg", "font-medium");
+    priceP1.innerText = "Discount";
+    belowAppendElement.appendChild(priceP2);
+    priceP2.classList.add("text-lg", "font-medium");
+    priceP2.innerText = "BDT " + disValue20;
+  } else {
+    alert("Invalid Coupon Code");
   }
 });
