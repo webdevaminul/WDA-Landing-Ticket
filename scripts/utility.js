@@ -145,6 +145,8 @@ document.getElementById("next-btn").addEventListener("click", function () {
   headerPart.classList.add("hidden");
   const mainPart = document.getElementById("main-section");
   mainPart.classList.add("hidden");
+  const footerPart = document.getElementById("footer-part");
+  footerPart.classList.add("hidden");
   const successPart = document.getElementById("success-part");
   successPart.classList.remove("hidden");
 });
@@ -154,6 +156,8 @@ document.getElementById("success-part").addEventListener("click", function () {
   headerPart.classList.remove("hidden");
   const mainPart = document.getElementById("main-section");
   mainPart.classList.remove("hidden");
+  const footerPart = document.getElementById("footer-part");
+  footerPart.classList.remove("hidden");
   const successPart = document.getElementById("success-part");
   successPart.classList.add("hidden");
 });

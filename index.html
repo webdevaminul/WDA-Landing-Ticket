@@ -55,15 +55,16 @@
         <!-- Nav Bar Middle  -->
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Destination</a></li>
-            <li><a>Search</a></li>
+            <li class="text-lg"><a href="#">Home</a></li>
+            <li class="text-lg"><a href="#">About</a></li>
+            <li class="text-lg"><a href="#">Destination</a></li>
+            <li class="text-lg"><a href="#">Search</a></li>
           </ul>
         </div>
         <!-- Nav Bar End  -->
         <div class="navbar-end">
           <a
+            href="#"
             class="btn bg-[#1DD1001A] border-[1px] border-[#1DD10066] text-[#1DD100] hover:bg-[#1DD1000D] hover:border-[#1DD10066] font-bold text-lg"
             >Bus <span><img src="images/icons/bus-icon.png" alt="Bus" /></span
           ></a>
@@ -253,7 +254,7 @@
       </section>
 
       <!-- Seats and Bill  -->
-      <section class="bg-gray-100 pb-20">
+      <section class="bg-gray-100 pb-10">
         <div class="grid grid-cols-12 container mx-auto rounded-2xl bg-white">
           <!-- Seats info  -->
           <div
@@ -550,6 +551,55 @@
       </section>
     </main>
 
+    <!-- Footer Section  -->
+    <footer id="footer-part" class="bg-black text-white">
+      <div class="container mx-auto grid grid-cols-2 pt-28 pb-10 gap-7">
+        <div
+          class="col-span-2 md:col-span-1 grid justify-center md:justify-start"
+        >
+          <h1 class="text-5xl font-bold mb-4 text-center md:text-left">
+            Safe Ticket
+          </h1>
+          <p class="max-w-80 text-center md:text-left">
+            Safe Ticket is a digital platform to make your daily commuting
+            better.
+          </p>
+        </div>
+        <div
+          class="col-span-2 md:col-span-1 grid justify-center md:justify-end"
+        >
+          <h1 class="text-2xl mb-3 text-center md:text-left">
+            Download our app
+          </h1>
+          <button
+            class="border-2 border-gray-600 border-solid px-5 py-3 flex items-center gap-3 rounded-2xl"
+          >
+            <div><img src="images/playstore.png" alt="" /></div>
+            <div>
+              <p class="text-sm text-left">GET IT ON</p>
+              <p class="text-2xl font-bold text-left">Google Play</p>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto grid grid-cols-2 pb-28 pt-6 gap-5 border-t-2 border-gray-600 border-dashed"
+      >
+        <p class="col-span-2 md:col-span-1 text-center md:text-left">
+          @all rights reserved, Safe Ticket services limited.2024
+        </p>
+        <div
+          class="col-span-2 md:col-span-1 flex justify-center md:justify-end gap-6 text-center md:text-left"
+        >
+          <p>Terms & condition</p>
+          <p>Return & refund policy</p>
+          <p>Privacy policy</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal part  -->
     <section
       id="success-part"
       class="min-h-screen bg-gray-100 flex justify-center items-center shadow-md hidden"
