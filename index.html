@@ -460,11 +460,14 @@
 
               <div class="col-span-3 relative w-full h-16">
                 <input
+                  id="coupon"
                   class="w-full p-5 rounded-xl absolute top-0 left-0 right-0"
                   placeholder="Have any copupon?"
                   type="text"
                 />
                 <button
+                  disabled
+                  id="apply"
                   class="btn bg-[#1DD100] hover:bg-[#1DD100] text-white text-lg absolute top-2 right-2"
                 >
                   Apply
@@ -472,7 +475,9 @@
               </div>
               <div class="col-span-3 flex justify-between">
                 <p class="text-lg font-medium">Grand Total</p>
-                <p class="text-lg font-medium">BDT 1100</p>
+                <p class="text-lg font-medium">
+                  BDT <span id="grand-total">0</span>
+                </p>
               </div>
             </div>
             <!-- Form  -->
